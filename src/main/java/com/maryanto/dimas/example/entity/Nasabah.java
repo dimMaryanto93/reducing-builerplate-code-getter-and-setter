@@ -7,5 +7,5 @@ public class Nasabah {
 
     private String cif;
     private String namaLengkap;
-    private String alamatDomisili;
+    private Alamat alamatDomisili;
 }

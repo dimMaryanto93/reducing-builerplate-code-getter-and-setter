@@ -16,7 +16,7 @@ public interface NasabahPeroranganMapper {
             @Mapping(target = "passPhoto", source = "dto.passPhoto"),
             @Mapping(target = "cif", source = "dto.nomorNasabah"),
             @Mapping(target = "namaLengkap", source = "dto.namaLengkap"),
-            @Mapping(target = "alamatDomisili", source = "dto.alamatDomisili")
+            @Mapping(target = "alamatDomisili.jalan", source = "dto.alamatDomisili")
     })
-    public NasabahPerorangan dtoToEntity(NasabahPeroranganDTO dto);
+    NasabahPerorangan dtoToEntity(NasabahPeroranganDTO dto);
 }

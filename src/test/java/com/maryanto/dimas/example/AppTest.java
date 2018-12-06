@@ -32,5 +32,8 @@ public class AppTest extends TestCase {
 
         assertNotNull("nomor CIF tidak boleh kosong", nasabah.getCif());
         assertEquals("bandingkan nomor cif", nasabah.getCif(), dto.getNomorNasabah());
+
+        assertNotNull("Alamat tidak boleh kosong", nasabah.getAlamatDomisili());
+        assertEquals("Bandingkan alamat jalan", nasabah.getAlamatDomisili().getJalan(), dto.getAlamatDomisili());
     }
 }
